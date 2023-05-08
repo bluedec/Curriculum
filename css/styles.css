@@ -1,0 +1,194 @@
+
+:root {
+	--decoration-color: #5B8F8F;
+	--background-color: #CBEEF1;
+}
+
+body {
+	background-color: var(--background-color); 
+	margin: 0;
+}
+
+h1 {
+	font-family: Cambria, sans-serif;
+	color: black;
+	font-size: 4rem;
+}
+
+p {
+	font-size: 20px;
+	text-align: center;
+}
+
+#user-face {
+	width: 96%;
+	height: 96%;
+	position: relative;
+	transform: translate(2%, 2%);
+}
+
+#flex-container {
+	margin-top: 4.5rem;
+	display: flex;
+	flex-wrap:nowrap;
+	border: 1px red dotted;
+	height: 1000px;
+}
+
+#flex-container > * {
+	margin: 4vw;
+}
+
+#rsp {
+	margin-top: 6rem;
+}
+
+.user-image {
+	height: 210px; 
+	width: 210px;
+	position: absolute;
+	z-index: 11;
+	top: 2rem;
+	left: 5vw;
+	border-radius: 2px;
+	min-height: 200px;
+	min-width: 200px;
+	max-height: 250px;
+	max-width: 250px;
+	background-color: #131313;
+}
+
+.line {
+	height: 55vh;
+	width: 1px;
+	z-index: 20;
+	opacity: 0.6;
+	background-color: black;
+	position: relative;
+	top: 6vw; 
+}
+
+.containers {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: var(--decoration-color);
+	border-radius: 1px;
+	opacity: 0.9;
+	z-index: 10;
+
+}
+
+.deco-1 {
+	position: absolute;
+	width: calc(65vw);
+	min-width: 680px;
+	height: 6rem;
+	top: 1rem;
+	left: 12vw;
+}
+
+.deco-1 > .content {
+	margin: 0;
+	display: flex;
+	gap: 1rem;
+	position: absolute;
+	padding-left: 10rem;
+}
+.content > h2 {
+	top: 0.6rem;
+	text-overflow: ellipsis;
+	position: relative;
+	white-space: nowrap;
+}
+
+.deco-2 {
+	position: relative;
+	padding: 5rem 2rem 5rem 2rem;	
+	height: 50vh;
+	width: calc(15rem + 0.5vw); 
+	top: 4.3vw;
+	left: 1.5vw;
+}
+
+.deco-2 > * {
+	margin: 0.8rem 2.8rem 0.5rem 2.8rem;
+}
+
+
+@media screen and (max-width: 680px) {
+	
+
+	.line {
+		height: 55vh;
+		width: 1px;
+		z-index: 20;
+		opacity: 0.6;
+		background-color: black;
+		position: relative;
+		top: 20vw; 
+	}
+
+	.user-image {
+		height: 210px; 
+		width: 210px;
+		position: absolute;
+		z-index: 11;
+		top: 2rem;
+		left: 14.2vw;
+		border-radius: 2px;
+		min-height: 200px;
+		min-width: 200px;
+		max-height: 250px;
+		max-width: 250px;
+		background-color: #131313;
+	}
+	#flex-container {
+		margin-top: 0.5rem;
+		min-width: 550px;
+		display: flex;
+		flex-wrap:nowrap;
+		border: 1px red dotted;
+	}
+
+	#rsp {
+		margin-top: 3rem;	
+	}	
+	#rsp > div > h3 {
+		text-align: center;
+	}
+	.deco-2 {
+		position: relative;
+		padding: 5rem 2rem 5rem 2rem;	
+		height: 30vh;
+		width: 15rem; 
+		top: calc(25.3vw);
+		left: 1.5vw;
+	}
+	.deco-1 {
+		position: absolute;
+		top: 37rem;
+		width: 25vw;
+		min-width: 535px;
+		height: 6rem;
+		right: 2vw;
+		left: 2vw;
+	}
+	.deco-1 > .content {
+		margin: 5px;
+		display: flex;
+		gap: 1rem;
+		position: absolute;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.content > h2 {
+		left: 10px;
+		margin-top: 10px;
+	} 
+	.content > p {
+		position: relative;
+		margin: 0;
+		top: 0.5rem;
+	}
+}
+
+
